@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.work-sans{
+  font-famil-font: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Shared styles */
+.display-flex {
+  display: flex;
+}
+.text-primary{
+  color: #FF900E;
+}
+.text-gray {
+  color: #424242;
+}
+.text-light-gray {
+  color: #727272;
+}
+.bg-light{
+  background-color: rgba(255, 144, 14, 0.1);
+
+}
+.btn-primary{
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 25px ;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+
+.section-title{
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* header styles */
+
+/* navbar related styles */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 70px;
+}
+.brand {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+ 
+}
+.nav-link{
+  text-decoration: none;
+}
+header{
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+  .banner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+ 
+  
+}
+/* banner rerated styles */
+.banner-content{
+  max-width: 510px;
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px;
+  
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.banner-description{
+  margin-bottom: 20px;
+}
+.banner-image{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+main > section {
+  margin-top: 50px;
+}
+
+/* team and feature related styles */
+.teams{
+  align-items: center;
+  justify-content: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  
+}
+.team-img-container img{
+  width: 100%;
+}
+.our-features {
+  margin-left: 50px;
+  max-width: 300px;
+}
+
+.feartures-description {
+  margin-bottom: 30px;
+}
+#quick-list{
+  font-weight: 500;
+}
+/* responsive media query */
+@media screen and (max-width: 500px) {
+  .navbar, 
+  .nav-links,
+  .teams{
+    flex-direction: column;
+  }
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features {
+    margin-left: 10px;
+  }
+}
+/* medium size device */
+@media screen and (min-width: 500px ) and (max-width: 900) {
+  .teams{
+    flex-direction: column;
+
+  }
+  .our-features{
+    margin: 30px auto;
+  }
+}
