@@ -68,7 +68,7 @@
   text-decoration: none;
 }
 header{
-  width: 1200px;
+ max-width: 1200px;
   margin: 0 auto;
   
 }
@@ -145,9 +145,12 @@ main > section {
 } */
  .featured-architect img {
   width: 100%;
+  height: 600px;
+  object-fit: cover;
  }
 .features{
   gap: 70px;
+  align-items: center;
 }
 #feature-section-title{
   border-left: 3px solid #FF900E;
@@ -172,7 +175,7 @@ main > section {
   margin-top: -50px;
 }
 #experience-year{
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700 ;
 }
 /* facts card */
@@ -238,7 +241,7 @@ footer{
 /* responsive media query */
 @media screen and (max-width: 500px) {
   .navbar, 
-  .nav-links,
+  
   .teams,
   .features{
     flex-direction: column;
